@@ -134,4 +134,9 @@ Messenger.prototype.send = function (msg) {
   }
 };
 
+Messenger.prototype.reset = function (msg) {
+  this.listenFunc = [];
+  this.targets = {};
+}
+
 module.exports = Messenger;

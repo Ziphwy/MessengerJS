@@ -135,5 +135,10 @@ window.Messenger = (function(){
         }
     };
 
+    Messenger.prototype.reset = function (msg) {
+        this.listenFunc = [];
+        this.targets = {};
+    }
+    
     return Messenger;
 })();
